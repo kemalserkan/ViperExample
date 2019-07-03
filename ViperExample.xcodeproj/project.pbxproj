@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		A351F0C122CB574D00CF83FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351F0C022CB574D00CF83FC /* AppDelegate.swift */; };
-		A351F0C322CB574D00CF83FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351F0C222CB574D00CF83FC /* ViewController.swift */; };
+		A351F0C322CB574D00CF83FC /* ViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351F0C222CB574D00CF83FC /* ViperViewController.swift */; };
 		A351F0C622CB574D00CF83FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A351F0C422CB574D00CF83FC /* Main.storyboard */; };
 		A351F0C822CB574F00CF83FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A351F0C722CB574F00CF83FC /* Assets.xcassets */; };
 		A351F0CB22CB574F00CF83FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A351F0C922CB574F00CF83FC /* LaunchScreen.storyboard */; };
 		A351F0D622CB574F00CF83FC /* ViperExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351F0D522CB574F00CF83FC /* ViperExampleTests.swift */; };
 		A351F0E122CB574F00CF83FC /* ViperExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351F0E022CB574F00CF83FC /* ViperExampleUITests.swift */; };
+		A351F0F022CB653000CF83FC /* ViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351F0EF22CB653000CF83FC /* ViperPresenter.swift */; };
+		A351F0F222CB65C300CF83FC /* ViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351F0F122CB65C300CF83FC /* ViperRouter.swift */; };
+		A351F0F422CB666F00CF83FC /* ViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351F0F322CB666F00CF83FC /* ViperInteractor.swift */; };
+		A351F0F622CB674900CF83FC /* ViperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351F0F522CB674900CF83FC /* ViperModel.swift */; };
+		A351F0F822CB685D00CF83FC /* ViperModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351F0F722CB685D00CF83FC /* ViperModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		A351F0BD22CB574D00CF83FC /* ViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A351F0C022CB574D00CF83FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A351F0C222CB574D00CF83FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A351F0C222CB574D00CF83FC /* ViperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperViewController.swift; sourceTree = "<group>"; };
 		A351F0C522CB574D00CF83FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A351F0C722CB574F00CF83FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A351F0CA22CB574F00CF83FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,11 @@
 		A351F0DC22CB574F00CF83FC /* ViperExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A351F0E022CB574F00CF83FC /* ViperExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperExampleUITests.swift; sourceTree = "<group>"; };
 		A351F0E222CB574F00CF83FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A351F0EF22CB653000CF83FC /* ViperPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperPresenter.swift; sourceTree = "<group>"; };
+		A351F0F122CB65C300CF83FC /* ViperRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperRouter.swift; sourceTree = "<group>"; };
+		A351F0F322CB666F00CF83FC /* ViperInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperInteractor.swift; sourceTree = "<group>"; };
+		A351F0F522CB674900CF83FC /* ViperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperModel.swift; sourceTree = "<group>"; };
+		A351F0F722CB685D00CF83FC /* ViperModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,8 @@
 		A351F0BF22CB574D00CF83FC /* ViperExample */ = {
 			isa = PBXGroup;
 			children = (
+				A351F0EE22CB582500CF83FC /* HomeModule */,
 				A351F0C022CB574D00CF83FC /* AppDelegate.swift */,
-				A351F0C222CB574D00CF83FC /* ViewController.swift */,
 				A351F0C422CB574D00CF83FC /* Main.storyboard */,
 				A351F0C722CB574F00CF83FC /* Assets.xcassets */,
 				A351F0C922CB574F00CF83FC /* LaunchScreen.storyboard */,
@@ -123,6 +133,19 @@
 				A351F0E222CB574F00CF83FC /* Info.plist */,
 			);
 			path = ViperExampleUITests;
+			sourceTree = "<group>";
+		};
+		A351F0EE22CB582500CF83FC /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				A351F0C222CB574D00CF83FC /* ViperViewController.swift */,
+				A351F0EF22CB653000CF83FC /* ViperPresenter.swift */,
+				A351F0F122CB65C300CF83FC /* ViperRouter.swift */,
+				A351F0F322CB666F00CF83FC /* ViperInteractor.swift */,
+				A351F0F522CB674900CF83FC /* ViperModel.swift */,
+				A351F0F722CB685D00CF83FC /* ViperModuleBuilder.swift */,
+			);
+			path = HomeModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A351F0C322CB574D00CF83FC /* ViewController.swift in Sources */,
+				A351F0F022CB653000CF83FC /* ViperPresenter.swift in Sources */,
+				A351F0F222CB65C300CF83FC /* ViperRouter.swift in Sources */,
+				A351F0F822CB685D00CF83FC /* ViperModuleBuilder.swift in Sources */,
+				A351F0F622CB674900CF83FC /* ViperModel.swift in Sources */,
+				A351F0C322CB574D00CF83FC /* ViperViewController.swift in Sources */,
+				A351F0F422CB666F00CF83FC /* ViperInteractor.swift in Sources */,
 				A351F0C122CB574D00CF83FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
