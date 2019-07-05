@@ -19,6 +19,9 @@
 		A351F0F422CB666F00CF83FC /* ViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351F0F322CB666F00CF83FC /* ViperInteractor.swift */; };
 		A351F0F622CB674900CF83FC /* ViperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351F0F522CB674900CF83FC /* ViperModel.swift */; };
 		A351F0F822CB685D00CF83FC /* ViperModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351F0F722CB685D00CF83FC /* ViperModuleBuilder.swift */; };
+		A399683922CDDD8D00BA44AD /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A399683822CDDD8D00BA44AD /* CustomTableViewCell.swift */; };
+		A399683B22CDE0FC00BA44AD /* CustomTableViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A399683A22CDE0FC00BA44AD /* CustomTableViewCellPresenter.swift */; };
+		A399683D22CDE1BF00BA44AD /* CustomTableViewCellInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A399683C22CDE1BF00BA44AD /* CustomTableViewCellInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		A351F0F322CB666F00CF83FC /* ViperInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperInteractor.swift; sourceTree = "<group>"; };
 		A351F0F522CB674900CF83FC /* ViperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperModel.swift; sourceTree = "<group>"; };
 		A351F0F722CB685D00CF83FC /* ViperModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperModuleBuilder.swift; sourceTree = "<group>"; };
+		A399683822CDDD8D00BA44AD /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		A399683A22CDE0FC00BA44AD /* CustomTableViewCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCellPresenter.swift; sourceTree = "<group>"; };
+		A399683C22CDE1BF00BA44AD /* CustomTableViewCellInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCellInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		A351F0BF22CB574D00CF83FC /* ViperExample */ = {
 			isa = PBXGroup;
 			children = (
+				A399683722CDDD6B00BA44AD /* CustomTableviewCellModule */,
 				A351F0EE22CB582500CF83FC /* HomeModule */,
 				A351F0C022CB574D00CF83FC /* AppDelegate.swift */,
 				A351F0C422CB574D00CF83FC /* Main.storyboard */,
@@ -146,6 +153,16 @@
 				A351F0F722CB685D00CF83FC /* ViperModuleBuilder.swift */,
 			);
 			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		A399683722CDDD6B00BA44AD /* CustomTableviewCellModule */ = {
+			isa = PBXGroup;
+			children = (
+				A399683822CDDD8D00BA44AD /* CustomTableViewCell.swift */,
+				A399683A22CDE0FC00BA44AD /* CustomTableViewCellPresenter.swift */,
+				A399683C22CDE1BF00BA44AD /* CustomTableViewCellInteractor.swift */,
+			);
+			path = CustomTableviewCellModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +298,10 @@
 			files = (
 				A351F0F022CB653000CF83FC /* ViperPresenter.swift in Sources */,
 				A351F0F222CB65C300CF83FC /* ViperRouter.swift in Sources */,
+				A399683B22CDE0FC00BA44AD /* CustomTableViewCellPresenter.swift in Sources */,
+				A399683922CDDD8D00BA44AD /* CustomTableViewCell.swift in Sources */,
 				A351F0F822CB685D00CF83FC /* ViperModuleBuilder.swift in Sources */,
+				A399683D22CDE1BF00BA44AD /* CustomTableViewCellInteractor.swift in Sources */,
 				A351F0F622CB674900CF83FC /* ViperModel.swift in Sources */,
 				A351F0C322CB574D00CF83FC /* ViperViewController.swift in Sources */,
 				A351F0F422CB666F00CF83FC /* ViperInteractor.swift in Sources */,

@@ -9,3 +9,8 @@
 struct ViperModel {
     let title: String
 }
+
+struct TableViewModel {
+    let title: String
+    let subTitle: String
+}

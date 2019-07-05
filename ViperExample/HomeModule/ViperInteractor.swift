@@ -8,6 +8,7 @@
 
 protocol ViperInteraction {
     func getTitle() -> ViperModel
+    func getTableViewData() -> [TableViewModel]
 }
 
 class ViperInteractor {
@@ -20,6 +21,15 @@ extension ViperInteractor : ViperInteraction {
         return ViperModel(title: "Hello VIPER")
     }
     
-   
+    func getTableViewData() -> [TableViewModel] {
+        var tempData: [TableViewModel] = [TableViewModel]()
+        
+        for index in 1...5 {
+            let oneTableViewdata : TableViewModel = TableViewModel(title:"Title \(index)", subTitle: "SubTitle \(index)")
+            tempData.append(oneTableViewdata)
+        }
+        
+        return tempData
+    }
 }
 

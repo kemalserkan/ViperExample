@@ -29,10 +29,12 @@ extension ViperPresenter : ViperPresentation {
     
     func viewDidLoad() {
         let homeModel = self.interactor.getTitle()
+        let tableViewData = self.interactor.getTableViewData()
         print("home Model: \(homeModel)")
         
         DispatchQueue.main.async { 
             self.view?.updateTitle(title: homeModel.title)
+            self.view?.setTableViewData(tableViewData)
         }
     }
 }
